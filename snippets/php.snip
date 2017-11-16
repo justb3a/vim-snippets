@@ -95,6 +95,12 @@ alias cl
 snippet bugg
 	<?php echo '<pre>' . var_dump(${0:var}) . '</pre>' ?>
 
+snippet t3dump
+	\TYPO3\CMS\Extbase\Utility\DebuggerUtility::var_dump(${0:var});
+	
+snippet t3dum
+	\TYPO3\CMS\Extbase\Utility\DebuggerUtility::var_dump(${0:var});
+	exit;
 
 snippet fun
 	function ${1:name}(${2:$param}) {
