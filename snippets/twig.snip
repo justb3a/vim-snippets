@@ -14,6 +14,14 @@ alias incl
 snippet include2
 alias incl2
     {% include 'partials/${0:name}.twig' with {'${1:var}': ${2:value}} %}
+
+snippet translate
+alias __s
+    {{ __('${0:var}', s) }}
+    
+snippet translate2
+alias __
+   {{ __('${0:var}') }}
   
 snippet     autoescape
 abbr        {% autoescape ... %} ... {% endautoescape %}
